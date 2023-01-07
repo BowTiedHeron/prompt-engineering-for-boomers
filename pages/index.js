@@ -1,20 +1,44 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import Head from "next/head";
+import Image from "next/image";
+import buildspaceLogo from "../assets/buildspace-logo.png";
+import { useState } from "react";
 
 const Home = () => {
+  const [userInput, setUserInput] = useState("");
+
+  const onUserChangedText = (event) => {
+    // for debugging purposes:
+    // console.log(event.target.value);
+    setUserInput(event.target.value);
+  };
+
   return (
     <div className="root">
-      <Head>
-        <title>GPT-3 Writer | buildspace</title>
-      </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>sup, insert your headline here</h1>
+            <h1>Prompt Engineering for Boomers</h1>
           </div>
           <div className="header-subtitle">
-            <h2>insert your subtitle here</h2>
+            <h2>
+              Don't feel down if you don't get it yet. This tool will get you
+              going in minutes!
+            </h2>
+          </div>
+        </div>
+        <div className="prompt-container">
+          <textarea
+            placeholder="what would you like to ask the all knowing AI?"
+            className="prompt-box"
+            value={userInput}
+            onChange={onUserChangedText}
+          />
+          <div className="prompt-buttons">
+            <a className="generate-button" onClick={null}>
+              <div className="generate">
+                <p>Generate</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
