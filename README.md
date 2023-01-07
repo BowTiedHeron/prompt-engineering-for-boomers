@@ -1,3 +1,5 @@
-# buildspace 
+# Prompt Engineering for Boomers!
+
 ### Welcome 👋
-This is the starter template for the [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) project.
+
+This project is inspired by [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) from the legends at Buildspace.
