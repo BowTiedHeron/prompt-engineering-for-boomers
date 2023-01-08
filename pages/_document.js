@@ -11,7 +11,7 @@ export default function Document() {
         />
         <meta
           property="og:description"
-          content="Experience a New Way to Learn Prompt Engineering with AI Coaching"
+          content="Learn Prompt Engineering with AI Coaching"
           key="description"
         />
         <meta
